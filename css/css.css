@@ -12,7 +12,7 @@ body {
   margin: 10rem;
 }
 .parallax {
-  /* The image used */
+  /* The image  */
   background-image: url(https://imageio.forbes.com/specials-images/imageserve/61b0b92f8b9952cba5c07bcd/Bitcoin-Cryptocurrency-trends-Graphs-and-charts/1960x0.jpg?format=jpg&width=960);
 
   /* Set a specific height */
@@ -52,7 +52,7 @@ body {
   animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
-
+/* ANIMATION SPINNER */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
