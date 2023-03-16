@@ -62,14 +62,4 @@ $(function () {
   $("#closeModal").on("click", function () {
     modalCancel();
   });
-  //SHOW ALL COINS ON NAVBAR COINS CLICK AND HIDE ALL OTHER DIV
-  $(".coinsN").on("click", function () {
-    showSection(".card");
-  });
-
-  //SHOW LIVE REPORTS AND HIDE ALL OTHER DIV
-  $(".aboutN").on("click", function () {
-    showSection("#about");
-  });
-  $("#about").hide();
 });

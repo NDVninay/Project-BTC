@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/css.css">
+    <script defer="" src="./Document_files/js.js.download"></script>
+    <script defer="" src="./Document_files/jss.js.download"></script>
+    <!-- BOOTSTRAP -->
+    <link href="./Document_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="./Document_files/bootstrap.bundle.min.js.download" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- JQUERY -->
+    <script src="./Document_files/jquery-3.6.3.min.js.download" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+  <body class="" style="">
+    <div class="header">
+      <div id="spinner" class="spin" style="display: none; left: 808px; top: 1188px;"></div>
+      <img alt="ct" src="./Document_files/btc.png" width="100px" id="image">
+      <h1>Crypto.com</h1>
+    </div>
+    <div class="parallax"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-xl sticky-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarBasic">
+          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/#coins">Coins</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/#">Live Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/#" tabindex="-1">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-btn btn-primary" type="button">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="coins d-flex flex-row flex-wrap" id="coins">
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        btc
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Bitcoin" id="checkbox-0" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Bitcoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-0-details" aria-expanded="false" aria-controls="coin-0-details">More Info</button>
+        <div class="collapse" id="coin-0-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        eth
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Ethereum" id="checkbox-1" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Ethereum</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-1-details" aria-expanded="false" aria-controls="coin-1-details">More Info</button>
+        <div class="collapse" id="coin-1-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        usdt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Tether" id="checkbox-2" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tether</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-2-details" aria-expanded="false" aria-controls="coin-2-details">More Info</button>
+        <div class="collapse" id="coin-2-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        bnb
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-BNB" id="checkbox-3" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">BNB</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-3-details" aria-expanded="false" aria-controls="coin-3-details">More Info</button>
+        <div class="collapse" id="coin-3-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        usdc
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-USD Coin" id="checkbox-4" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">USD Coin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-4-details" aria-expanded="false" aria-controls="coin-4-details">More Info</button>
+        <div class="collapse" id="coin-4-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        xrp
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-XRP" id="checkbox-5" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">XRP</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-5-details" aria-expanded="false" aria-controls="coin-5-details">More Info</button>
+        <div class="collapse" id="coin-5-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ada
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Cardano" id="checkbox-6" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Cardano</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-6-details" aria-expanded="false" aria-controls="coin-6-details">More Info</button>
+        <div class="collapse" id="coin-6-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        matic
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Polygon" id="checkbox-7" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Polygon</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-7-details" aria-expanded="false" aria-controls="coin-7-details">More Info</button>
+        <div class="collapse" id="coin-7-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        doge
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Dogecoin" id="checkbox-8" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Dogecoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-8-details" aria-expanded="false" aria-controls="coin-8-details">More Info</button>
+        <div class="collapse" id="coin-8-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        steth
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Lido Staked Ether" id="checkbox-9" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Lido Staked Ether</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-9-details" aria-expanded="false" aria-controls="coin-9-details">More Info</button>
+        <div class="collapse" id="coin-9-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        busd
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Binance USD" id="checkbox-10" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Binance USD</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-10-details" aria-expanded="false" aria-controls="coin-10-details">More Info</button>
+        <div class="collapse" id="coin-10-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        sol
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Solana" id="checkbox-11" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Solana</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-11-details" aria-expanded="false" aria-controls="coin-11-details">More Info</button>
+        <div class="collapse" id="coin-11-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        dot
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Polkadot" id="checkbox-12" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Polkadot</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-12-details" aria-expanded="false" aria-controls="coin-12-details">More Info</button>
+        <div class="collapse" id="coin-12-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        shib
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Shiba Inu" id="checkbox-13" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Shiba Inu</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-13-details" aria-expanded="false" aria-controls="coin-13-details">More Info</button>
+        <div class="collapse" id="coin-13-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        dai
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Dai" id="checkbox-14" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Dai</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-14-details" aria-expanded="false" aria-controls="coin-14-details">More Info</button>
+        <div class="collapse" id="coin-14-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        trx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-TRON" id="checkbox-15" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">TRON</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-15-details" aria-expanded="false" aria-controls="coin-15-details">More Info</button>
+        <div class="collapse" id="coin-15-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ltc
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Litecoin" id="checkbox-16" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Litecoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-16-details" aria-expanded="false" aria-controls="coin-16-details">More Info</button>
+        <div class="collapse" id="coin-16-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        avax
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Avalanche" id="checkbox-17" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Avalanche</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-17-details" aria-expanded="false" aria-controls="coin-17-details">More Info</button>
+        <div class="collapse" id="coin-17-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        uni
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Uniswap" id="checkbox-18" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Uniswap</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-18-details" aria-expanded="false" aria-controls="coin-18-details">More Info</button>
+        <div class="collapse" id="coin-18-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ton
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Toncoin" id="checkbox-19" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Toncoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-19-details" aria-expanded="false" aria-controls="coin-19-details">More Info</button>
+        <div class="collapse" id="coin-19-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        atom
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Cosmos Hub" id="checkbox-20" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Cosmos Hub</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-20-details" aria-expanded="false" aria-controls="coin-20-details">More Info</button>
+        <div class="collapse" id="coin-20-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        wbtc
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Wrapped Bitcoin" id="checkbox-21" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Wrapped Bitcoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-21-details" aria-expanded="false" aria-controls="coin-21-details">More Info</button>
+        <div class="collapse" id="coin-21-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        link
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Chainlink" id="checkbox-22" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Chainlink</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-22-details" aria-expanded="false" aria-controls="coin-22-details">More Info</button>
+        <div class="collapse" id="coin-22-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        leo
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-LEO Token" id="checkbox-23" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">LEO Token</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-23-details" aria-expanded="false" aria-controls="coin-23-details">More Info</button>
+        <div class="collapse" id="coin-23-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        xmr
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Monero" id="checkbox-24" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Monero</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-24-details" aria-expanded="false" aria-controls="coin-24-details">More Info</button>
+        <div class="collapse" id="coin-24-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        etc
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Ethereum Classic" id="checkbox-25" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Ethereum Classic</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-25-details" aria-expanded="false" aria-controls="coin-25-details">More Info</button>
+        <div class="collapse" id="coin-25-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        okb
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-OKB" id="checkbox-26" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">OKB</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-26-details" aria-expanded="false" aria-controls="coin-26-details">More Info</button>
+        <div class="collapse" id="coin-26-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        fil
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Filecoin" id="checkbox-27" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Filecoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-27-details" aria-expanded="false" aria-controls="coin-27-details">More Info</button>
+        <div class="collapse" id="coin-27-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        bch
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Bitcoin Cash" id="checkbox-28" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Bitcoin Cash</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-28-details" aria-expanded="false" aria-controls="coin-28-details">More Info</button>
+        <div class="collapse" id="coin-28-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        xlm
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Stellar" id="checkbox-29" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Stellar</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-29-details" aria-expanded="false" aria-controls="coin-29-details">More Info</button>
+        <div class="collapse" id="coin-29-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ldo
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Lido DAO" id="checkbox-30" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Lido DAO</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-30-details" aria-expanded="false" aria-controls="coin-30-details">More Info</button>
+        <div class="collapse" id="coin-30-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        apt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Aptos" id="checkbox-31" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Aptos</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-31-details" aria-expanded="false" aria-controls="coin-31-details">More Info</button>
+        <div class="collapse" id="coin-31-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        tusd
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-TrueUSD" id="checkbox-32" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">TrueUSD</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-32-details" aria-expanded="false" aria-controls="coin-32-details">More Info</button>
+        <div class="collapse" id="coin-32-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        qnt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Quant" id="checkbox-33" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Quant</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-33-details" aria-expanded="false" aria-controls="coin-33-details">More Info</button>
+        <div class="collapse" id="coin-33-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        cro
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Cronos" id="checkbox-34" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Cronos</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-34-details" aria-expanded="false" aria-controls="coin-34-details">More Info</button>
+        <div class="collapse" id="coin-34-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        hbar
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Hedera" id="checkbox-35" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Hedera</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-35-details" aria-expanded="false" aria-controls="coin-35-details">More Info</button>
+        <div class="collapse" id="coin-35-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        near
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-NEAR Protocol" id="checkbox-36" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">NEAR Protocol</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-36-details" aria-expanded="false" aria-controls="coin-36-details">More Info</button>
+        <div class="collapse" id="coin-36-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ape
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-ApeCoin" id="checkbox-37" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">ApeCoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-37-details" aria-expanded="false" aria-controls="coin-37-details">More Info</button>
+        <div class="collapse" id="coin-37-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        vet
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-VeChain" id="checkbox-38" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">VeChain</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-38-details" aria-expanded="false" aria-controls="coin-38-details">More Info</button>
+        <div class="collapse" id="coin-38-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        icp
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Internet Computer" id="checkbox-39" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Internet Computer</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-39-details" aria-expanded="false" aria-controls="coin-39-details">More Info</button>
+        <div class="collapse" id="coin-39-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        algo
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Algorand" id="checkbox-40" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Algorand</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-40-details" aria-expanded="false" aria-controls="coin-40-details">More Info</button>
+        <div class="collapse" id="coin-40-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        grt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-The Graph" id="checkbox-41" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">The Graph</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-41-details" aria-expanded="false" aria-controls="coin-41-details">More Info</button>
+        <div class="collapse" id="coin-41-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        eos
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-EOS" id="checkbox-42" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">EOS</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-42-details" aria-expanded="false" aria-controls="coin-42-details">More Info</button>
+        <div class="collapse" id="coin-42-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ftm
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Fantom" id="checkbox-43" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Fantom</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-43-details" aria-expanded="false" aria-controls="coin-43-details">More Info</button>
+        <div class="collapse" id="coin-43-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        sand
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-The Sandbox" id="checkbox-44" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">The Sandbox</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-44-details" aria-expanded="false" aria-controls="coin-44-details">More Info</button>
+        <div class="collapse" id="coin-44-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        egld
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-MultiversX" id="checkbox-45" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">MultiversX</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-45-details" aria-expanded="false" aria-controls="coin-45-details">More Info</button>
+        <div class="collapse" id="coin-45-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        aave
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Aave" id="checkbox-46" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Aave</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-46-details" aria-expanded="false" aria-controls="coin-46-details">More Info</button>
+        <div class="collapse" id="coin-46-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        frax
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Frax" id="checkbox-47" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Frax</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-47-details" aria-expanded="false" aria-controls="coin-47-details">More Info</button>
+        <div class="collapse" id="coin-47-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        stx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Stacks" id="checkbox-48" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Stacks</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-48-details" aria-expanded="false" aria-controls="coin-48-details">More Info</button>
+        <div class="collapse" id="coin-48-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        mana
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Decentraland" id="checkbox-49" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Decentraland</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-49-details" aria-expanded="false" aria-controls="coin-49-details">More Info</button>
+        <div class="collapse" id="coin-49-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        flow
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Flow" id="checkbox-50" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Flow</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-50-details" aria-expanded="false" aria-controls="coin-50-details">More Info</button>
+        <div class="collapse" id="coin-50-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        theta
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Theta Network" id="checkbox-51" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Theta Network</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-51-details" aria-expanded="false" aria-controls="coin-51-details">More Info</button>
+        <div class="collapse" id="coin-51-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        xtz
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Tezos" id="checkbox-52" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tezos</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-52-details" aria-expanded="false" aria-controls="coin-52-details">More Info</button>
+        <div class="collapse" id="coin-52-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        axs
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Axie Infinity" id="checkbox-53" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Axie Infinity</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-53-details" aria-expanded="false" aria-controls="coin-53-details">More Info</button>
+        <div class="collapse" id="coin-53-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        snx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Synthetix Network" id="checkbox-54" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Synthetix Network</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-54-details" aria-expanded="false" aria-controls="coin-54-details">More Info</button>
+        <div class="collapse" id="coin-54-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        kcs
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-KuCoin" id="checkbox-55" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">KuCoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-55-details" aria-expanded="false" aria-controls="coin-55-details">More Info</button>
+        <div class="collapse" id="coin-55-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        usdp
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Pax Dollar" id="checkbox-56" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Pax Dollar</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-56-details" aria-expanded="false" aria-controls="coin-56-details">More Info</button>
+        <div class="collapse" id="coin-56-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        imx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-ImmutableX" id="checkbox-57" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">ImmutableX</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-57-details" aria-expanded="false" aria-controls="coin-57-details">More Info</button>
+        <div class="collapse" id="coin-57-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        mkr
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Maker" id="checkbox-58" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Maker</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-58-details" aria-expanded="false" aria-controls="coin-58-details">More Info</button>
+        <div class="collapse" id="coin-58-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        lunc
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Terra Luna Classic" id="checkbox-59" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Terra Luna Classic</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-59-details" aria-expanded="false" aria-controls="coin-59-details">More Info</button>
+        <div class="collapse" id="coin-59-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        neo
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-NEO" id="checkbox-60" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">NEO</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-60-details" aria-expanded="false" aria-controls="coin-60-details">More Info</button>
+        <div class="collapse" id="coin-60-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        op
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Optimism" id="checkbox-61" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Optimism</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-61-details" aria-expanded="false" aria-controls="coin-61-details">More Info</button>
+        <div class="collapse" id="coin-61-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        klay
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Klaytn" id="checkbox-62" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Klaytn</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-62-details" aria-expanded="false" aria-controls="coin-62-details">More Info</button>
+        <div class="collapse" id="coin-62-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        usdd
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-USDD" id="checkbox-63" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">USDD</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-63-details" aria-expanded="false" aria-controls="coin-63-details">More Info</button>
+        <div class="collapse" id="coin-63-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        crv
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Curve DAO" id="checkbox-64" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Curve DAO</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-64-details" aria-expanded="false" aria-controls="coin-64-details">More Info</button>
+        <div class="collapse" id="coin-64-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        rpl
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Rocket Pool" id="checkbox-65" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Rocket Pool</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-65-details" aria-expanded="false" aria-controls="coin-65-details">More Info</button>
+        <div class="collapse" id="coin-65-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        gt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Gate" id="checkbox-66" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Gate</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-66-details" aria-expanded="false" aria-controls="coin-66-details">More Info</button>
+        <div class="collapse" id="coin-66-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        cake
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-PancakeSwap" id="checkbox-67" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">PancakeSwap</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-67-details" aria-expanded="false" aria-controls="coin-67-details">More Info</button>
+        <div class="collapse" id="coin-67-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        bsv
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Bitcoin SV" id="checkbox-68" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Bitcoin SV</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-68-details" aria-expanded="false" aria-controls="coin-68-details">More Info</button>
+        <div class="collapse" id="coin-68-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        bit
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-BitDAO" id="checkbox-69" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">BitDAO</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-69-details" aria-expanded="false" aria-controls="coin-69-details">More Info</button>
+        <div class="collapse" id="coin-69-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ht
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Huobi" id="checkbox-70" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Huobi</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-70-details" aria-expanded="false" aria-controls="coin-70-details">More Info</button>
+        <div class="collapse" id="coin-70-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        fxs
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Frax Share" id="checkbox-71" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Frax Share</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-71-details" aria-expanded="false" aria-controls="coin-71-details">More Info</button>
+        <div class="collapse" id="coin-71-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        chz
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Chiliz" id="checkbox-72" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Chiliz</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-72-details" aria-expanded="false" aria-controls="coin-72-details">More Info</button>
+        <div class="collapse" id="coin-72-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        btt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-BitTorrent" id="checkbox-73" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">BitTorrent</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-73-details" aria-expanded="false" aria-controls="coin-73-details">More Info</button>
+        <div class="collapse" id="coin-73-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        mina
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Mina Protocol" id="checkbox-74" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mina Protocol</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-74-details" aria-expanded="false" aria-controls="coin-74-details">More Info</button>
+        <div class="collapse" id="coin-74-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        dash
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Dash" id="checkbox-75" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Dash</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-75-details" aria-expanded="false" aria-controls="coin-75-details">More Info</button>
+        <div class="collapse" id="coin-75-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        gmx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-GMX" id="checkbox-76" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">GMX</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-76-details" aria-expanded="false" aria-controls="coin-76-details">More Info</button>
+        <div class="collapse" id="coin-76-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        miota
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-IOTA" id="checkbox-77" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">IOTA</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-77-details" aria-expanded="false" aria-controls="coin-77-details">More Info</button>
+        <div class="collapse" id="coin-77-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        xec
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-eCash" id="checkbox-78" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">eCash</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-78-details" aria-expanded="false" aria-controls="coin-78-details">More Info</button>
+        <div class="collapse" id="coin-78-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        edgt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Edgecoin" id="checkbox-79" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Edgecoin</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-79-details" aria-expanded="false" aria-controls="coin-79-details">More Info</button>
+        <div class="collapse" id="coin-79-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        wbt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-WhiteBIT Token" id="checkbox-80" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">WhiteBIT Token</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-80-details" aria-expanded="false" aria-controls="coin-80-details">More Info</button>
+        <div class="collapse" id="coin-80-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        bgb
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Bitget Token" id="checkbox-81" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Bitget Token</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-81-details" aria-expanded="false" aria-controls="coin-81-details">More Info</button>
+        <div class="collapse" id="coin-81-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        twt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Trust Wallet" id="checkbox-82" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Trust Wallet</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-82-details" aria-expanded="false" aria-controls="coin-82-details">More Info</button>
+        <div class="collapse" id="coin-82-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        paxg
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-PAX Gold" id="checkbox-83" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">PAX Gold</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-83-details" aria-expanded="false" aria-controls="coin-83-details">More Info</button>
+        <div class="collapse" id="coin-83-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        tkx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Tokenize Xchange" id="checkbox-84" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tokenize Xchange</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-84-details" aria-expanded="false" aria-controls="coin-84-details">More Info</button>
+        <div class="collapse" id="coin-84-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ceth
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-cETH" id="checkbox-85" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">cETH</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-85-details" aria-expanded="false" aria-controls="coin-85-details">More Info</button>
+        <div class="collapse" id="coin-85-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        xaut
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Tether Gold" id="checkbox-86" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tether Gold</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-86-details" aria-expanded="false" aria-controls="coin-86-details">More Info</button>
+        <div class="collapse" id="coin-86-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        osmo
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Osmosis" id="checkbox-87" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Osmosis</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-87-details" aria-expanded="false" aria-controls="coin-87-details">More Info</button>
+        <div class="collapse" id="coin-87-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        kava
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Kava" id="checkbox-88" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Kava</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-88-details" aria-expanded="false" aria-controls="coin-88-details">More Info</button>
+        <div class="collapse" id="coin-88-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        rndr
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Render" id="checkbox-89" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Render</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-89-details" aria-expanded="false" aria-controls="coin-89-details">More Info</button>
+        <div class="collapse" id="coin-89-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        agix
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-SingularityNET" id="checkbox-90" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">SingularityNET</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-90-details" aria-expanded="false" aria-controls="coin-90-details">More Info</button>
+        <div class="collapse" id="coin-90-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        cvx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Convex Finance" id="checkbox-91" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Convex Finance</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-91-details" aria-expanded="false" aria-controls="coin-91-details">More Info</button>
+        <div class="collapse" id="coin-91-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        ar
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Arweave" id="checkbox-92" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Arweave</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-92-details" aria-expanded="false" aria-controls="coin-92-details">More Info</button>
+        <div class="collapse" id="coin-92-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        xdc
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-XDC Network" id="checkbox-93" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">XDC Network</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-93-details" aria-expanded="false" aria-controls="coin-93-details">More Info</button>
+        <div class="collapse" id="coin-93-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        cfx
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Conflux" id="checkbox-94" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Conflux</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-94-details" aria-expanded="false" aria-controls="coin-94-details">More Info</button>
+        <div class="collapse" id="coin-94-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        okt
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-OKC" id="checkbox-95" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">OKC</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-95-details" aria-expanded="false" aria-controls="coin-95-details">More Info</button>
+        <div class="collapse" id="coin-95-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        rune
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-THORChain" id="checkbox-96" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">THORChain</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-96-details" aria-expanded="false" aria-controls="coin-96-details">More Info</button>
+        <div class="collapse" id="coin-96-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        1inch
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-1inch" id="checkbox-97" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">1inch</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-97-details" aria-expanded="false" aria-controls="coin-97-details">More Info</button>
+        <div class="collapse" id="coin-97-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        wemix
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-WEMIX" id="checkbox-98" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">WEMIX</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-98-details" aria-expanded="false" aria-controls="coin-98-details">More Info</button>
+        <div class="collapse" id="coin-98-details">
+        </div>
+      </div>
+    </div>
+  
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
+        zil
+        <div class="form-check form-switch d-inline-block m-1 p-0">
+          <input class="form-check-input checkbox-Zilliqa" id="checkbox-99" type="checkbox">
+        </div>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Zilliqa</h5>
+      </div>
+      <div class="card-footer bg-transparent">
+        <button type="button" class="btn btn-primary moreInfo" data-bs-toggle="collapse" data-bs-target="#coin-99-details" aria-expanded="false" aria-controls="coin-99-details">More Info</button>
+        <div class="collapse" id="coin-99-details">
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- MODAL -->
+    <div class="modal fade" id="coinsModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="exampleModalLabel">
+              Coins Added To Live Report:
+            </h2>
+            <button type="button" onclick="close()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+    <div class="row">
+    <div class="col-6">
+      <h5>Live Report Coins</h5>
+      <ul>
+        <li>First Coin: Tether</li>
+        <li>Second Coin: Ethereum</li>
+        <li>Third Coin: Bitcoin</li>
+        <li>Fourth Coin: BNB</li>
+        <li>Fifth Coin: USD Coin</li>
+      </ul>
+    </div>
+    <div class="col-6">
+      <h5>The Extra Coin</h5>
+      <ul>
+      <li>Sixth Coin: XRP</li>
+      </ul>
+    </div>
+  </div>
+    </div>
+          <div class="modal-footer flex-column text-center">
+            <div class="order-1">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="closeModal">
+                Close
+              </button>
+              <button type="button" class="btn btn-warning" id="changeCoin" data-bs-toggle="collapse" data-bs-target="#coinsCollapse" aria-expanded="false" aria-controls="coinsCollapse">
+                Change Coin
+              </button>
+              <!-- COLLAPSE FOR CHANGE COIN -->
+              <div class="collapse collapseCoin" id="coinsCollapse">
+                Which Coin To Replace:
+                <select class="form-select replaceCoin" aria-label="Default select example">
+                  <option selected="" disabled="">
+                    Select Which Coin To Replace
+                  </option></select><br>
+                <input type="button" value="Submit" class="approveChange">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

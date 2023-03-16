@@ -30,6 +30,7 @@ const getCoinsDisplay = async () => {
   }
   return displayCoins;
 };
+
 // FUNCTION displayCoin FOR APPENDING THE COINS WITH BOOTSTRAP CARD
 const displayCoin = (coin, index) => {
   // MAKE DIFFERENT ID FOR EACH COLLAPSE
@@ -38,8 +39,8 @@ const displayCoin = (coin, index) => {
   let checkBoxId = `checkbox-${index}`;
   // APPEND THE CARD THE COINS DIV
   $(".coins").append(`
-    <div class="card border-black  text-black  bg-transparent ">
-      <div class="card-header border-black d-flex justify-content-between">
+    <div class="card border-secondary  text-white  bg-transparent ">
+      <div class="card-header border-secondary d-flex justify-content-between">
         ${coin.symbol}
         <div class="form-check form-switch d-inline-block m-1 p-0">
           <input class="form-check-input checkbox-${coin.name}" id ="${checkBoxId}" type="checkbox"/>
@@ -143,6 +144,7 @@ const checkBoxCheck = (event) => {
   if ($("#" + checkBoxId).is(":checked")) {
     if (liveReportsArr.length < 6) {
       liveReportsArr.push(displayCoins[checkBoxIndex]);
+      console.log(liveReportsArr);
     }
   } else {
     let arrIndex = liveReportsArr.indexOf(displayCoins[checkBoxIndex]);
@@ -193,9 +195,9 @@ const modalCollapse = () => {
   }
 };
 const changeCoin = () => {
-  // CLOSE THE COLLAPSE
+  // CLOSE COLLAPSE
   $("#coinsCollapse").collapse("hide");
-  // CLOSE THE MODAL
+  // CLOSE MODAL
   $("#coinsModal").modal("hide");
   let checkBoxClass = ".checkbox-" + $(".replaceCoin").val();
   // Find checkbox with the specified class and uncheck
@@ -212,7 +214,16 @@ const modalCancel = () => {
   // CLOSE THE COLLAPSE
   $("#coinsCollapse").collapse("hide");
   // remove the coin from liveReportsArr
-  liveReportsArr.splice(liveReportsArr.length - 1, 1);
-  // Find the last checked checkbox element and uncheck it
-  $(".form-check-input:checked").last().prop("checked", false);
+  let lastCoin = liveReportsArr[liveReportsArr.length - 1].name.replaceAll(
+    " ",
+    "."
+  );
+  $(`.checkbox-${lastCoin}`).prop("checked", false);
+  // remove the coin from liveReportsArr
+  liveReportsArr.pop();
+};
+// Function to show a specific section and hide all others
+const showSection = (section) => {
+  $(".card, #liveReports, #about").hide();
+  $(section).show();
 };
